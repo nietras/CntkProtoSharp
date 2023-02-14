@@ -7,7 +7,7 @@
 |`CntkProtoSharp`  |[![NuGet](https://img.shields.io/nuget/v/CntkProtoSharp)](https://www.nuget.org/packages/CntkProtoSharp/) [![Downloads](https://img.shields.io/nuget/dt/CntkProtoSharp)](https://www.nuget.org/packages/CntkProtoSharp/) |
 
 # `CntkProtoSharp` library
-CNTK protobuf format parsing and manipulation in C#.
+CNTK model V2 protobuf format parsing and manipulation in C#.
 
 # Quick Guide
 Install latest version of .NET:
