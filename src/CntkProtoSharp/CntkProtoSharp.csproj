@@ -9,18 +9,26 @@
   <PropertyGroup>
     <TargetFramework>net5.0</TargetFramework>
     <RootNamespace>CNTK.Proto</RootNamespace>
+    <IsPackable>true</IsPackable>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <IsTrimmable>true</IsTrimmable>
+    <EnableTrimAnalyzer>true</EnableTrimAnalyzer>
+    <EnableAOTAnalyzer>true</EnableAOTAnalyzer>
 
     <Description>CNTK model V2 protobuf format parsing and manipulation in C#.</Description>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
 
-    <PackageIcon>Icon.jpg</PackageIcon>
-    <PackageIconUrl>https://raw.github.com/nietras/CntkProtoSharp/master/Icon.jpg</PackageIconUrl>
+    <!-- NuGet -->
+    <PackageId>CntkProtoSharp</PackageId>
     <PackageTags>CNTK,protobuf</PackageTags>
-    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageIcon>Icon.jpg</PackageIcon>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageIconUrl>https://raw.github.com/nietras/CntkProtoSharp/master/Icon.jpg</PackageIconUrl>
     <PackageProjectUrl>https://github.com/nietras/CntkProtoSharp</PackageProjectUrl>
     <PackageReleaseNotes>https://github.com/nietras/CntkProtoSharp/releases</PackageReleaseNotes>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
 
-    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
   </PropertyGroup>
   
   <ItemGroup>
