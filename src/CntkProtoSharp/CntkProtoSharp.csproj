@@ -1,0 +1,38 @@
+﻿<Project>
+  <!-- Custom properties need to be included before the Sdk.props 
+       The Directory.Build.props way of doing this would have to be replicated in multiple places,
+       so instead using the old props customization trick but define it before Sdk.props. -->
+  <Import Project="../Project.Output.Library.props" />
+  
+  <Import Project="Sdk.props" Sdk="Microsoft.NET.Sdk" />
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <RootNamespace>CNTK.Proto</RootNamespace>
+
+    <Description>CNTK model V2 protobuf format parsing and manipulation in C#.</Description>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+
+    <PackageIcon>packageIcon.png</PackageIcon>
+    <PackageIconFullPath>$(MSBuildThisFileDirectory)packageIcon.jpg</PackageIconFullPath>
+    <PackageTags>CNTK,protobuf</PackageTags>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageProjectUrl>https://github.com/nietras/CntkProtoSharp</PackageProjectUrl>
+    <PublishRepositoryUrl>true</PublishRepositoryUrl>
+    <IncludeSymbols>true</IncludeSymbols>
+
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <CheckEolTargetFramework>false</CheckEolTargetFramework>
+  </PropertyGroup>
+  
+  <ItemGroup>
+    <None Include="packageIcon.png" Pack="true" PackagePath="" />
+  </ItemGroup>
+  
+  <ItemGroup>
+    <PackageReference Include="Google.Protobuf" Version="3.14.0" />
+    <!--<PackageReference Include="Google.Protobuf.Tools" Version="3.14.0" />-->
+  </ItemGroup>
+
+  <Import Project="Sdk.targets" Sdk="Microsoft.NET.Sdk" />
+</Project>
