@@ -13,20 +13,19 @@
     <Description>CNTK model V2 protobuf format parsing and manipulation in C#.</Description>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
 
-    <PackageIcon>packageIcon.jpg</PackageIcon>
-    <PackageIconFullPath>$(MSBuildThisFileDirectory)packageIcon.jpg</PackageIconFullPath>
+    <PackageIcon>Icon.jpg</PackageIcon>
+    <PackageIconUrl>https://raw.github.com/nietras/CntkProtoSharp/master/Icon.jpg</PackageIconUrl>
     <PackageTags>CNTK,protobuf</PackageTags>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageProjectUrl>https://github.com/nietras/CntkProtoSharp</PackageProjectUrl>
-    <PublishRepositoryUrl>true</PublishRepositoryUrl>
-    <IncludeSymbols>true</IncludeSymbols>
+    <PackageReleaseNotes>https://github.com/nietras/CntkProtoSharp/releases</PackageReleaseNotes>
 
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
-    <CheckEolTargetFramework>false</CheckEolTargetFramework>
   </PropertyGroup>
   
   <ItemGroup>
-    <None Include="packageIcon.jpg" Pack="true" PackagePath="" />
+    <None Include="../../Icon.jpg" Pack="true" PackagePath="\" />
+    <None Include="../../README.md" Pack="true" PackagePath="\" />
   </ItemGroup>
   
   <ItemGroup>
